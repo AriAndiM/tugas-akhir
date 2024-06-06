@@ -24,6 +24,7 @@ from collections import defaultdict
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore")
 # string.punctuation
+nltk.download('wordnet')
 nltk.download('punkt')
 nltk.download('stopwords')
 
