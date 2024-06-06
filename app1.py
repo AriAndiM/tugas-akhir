@@ -9,6 +9,7 @@ import pickle
 import joblib
 import warnings
 import nltk
+import gensim
 from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
