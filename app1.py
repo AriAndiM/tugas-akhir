@@ -168,7 +168,7 @@ with st.container():
             # st.write('Vector Dokumen')
             if document_vectors is not None:
                 document_vectors_df = pd.DataFrame(document_vectors)
-                st.write(document_vectors_df)
+                # st.write(document_vectors_df)
             else:
                 data = {i+1: [0] for i in range(100)}
                 document_vectors_df = pd.DataFrame(data)
