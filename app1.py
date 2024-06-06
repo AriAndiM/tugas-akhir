@@ -116,7 +116,7 @@ with st.container():
               return ','.join(hasil)
 
             df_mentah['Clean']= df_mentah['Ulasan'].apply(cleaning)
-            # df_clean = df_mentah[['Clean']]
+            df_clean = df_mentah[['Clean']]
             df_clean['Case Folding']= df_clean['Clean'].apply(case_folding)
             # st.write(df_clean['Case Folding'])
             df_clean['Tokenization'] = df_clean['Case Folding'].apply(tokenization)
