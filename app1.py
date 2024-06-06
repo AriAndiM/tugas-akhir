@@ -173,7 +173,7 @@ with st.container():
                 data = {i+1: [0] for i in range(100)}
                 document_vectors_df = pd.DataFrame(data)
                 # document_vectors_df
-                st.write(document_vectors_df)
+                # st.write(document_vectors_df)
 
             #klasifikasi menggunakan SVM
             with open('./Model/Skenario 1 _ w6 _ c10g1 rbf.pkl','rb') as r:
