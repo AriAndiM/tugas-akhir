@@ -129,7 +129,7 @@ with st.container():
             # st.write(df_clean['Stemming'])
 
             # skip-gram
-            model_w2v = Word2Vec.load("Ekstraksi Fitur\skenario 1 model w6.model")
+            model_w2v = Word2Vec.load("./Ekstraksi Fitur/skenario 1 model w6.model")
 
             data = df_clean['Stemming']
             hasil_preprocess = [row.split(',') for row in data]
@@ -176,7 +176,7 @@ with st.container():
                 st.write(document_vectors_df)
 
             #klasifikasi menggunakan SVM
-            with open('Model/Skenario 1 _ w6 _ c10g1 rbf.pkl','rb') as r:
+            with open('./Model/Skenario 1 _ w6 _ c10g1 rbf.pkl','rb') as r:
                 model_svm = pickle.load(r)
 
             pred = model_svm.predict(document_vectors_df)
